@@ -7,17 +7,47 @@
 .light for .content
 */
 
-.long{
+* {
+    color: #2d2d2d;
+}
+
+#sidebar {
+    background: linear-gradient(to left top, #F48024, #d66c22);
+}
+
+.wrapper.style1, wrapper.style1-alt, wrapper.light, wrapper.wrapper, wrapper.long {
+    background-color: #FFF;
+}
+
+.wrapper.style2 {
+    padding: 20px !important;
+}
+
+.long {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    color:black;
+    color: black;
     width: 100%;
     display: none;
 }
-#task1{
+
+#task1 {
     background-color: white;
 }
-.light{
-    background-color: #484aa3;
+
+.light .content {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.button {
+    margin: 3em 0 0 0;
+    border-color: #f48024 !important;
+    color: #2d2d2d !important;
+}
+
+.button:hover, .button:active {
+    color: #FFF !important;
+    background:  linear-gradient(to left top, #F48024, #d66c22) !important;
 }

@@ -1698,11 +1698,12 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+
+	h1, h2, h3, h4, h5, h6, a, p {
+		color: #2d2d2d;
 		font-weight: bold;
 		line-height: 1.5;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2572,6 +2573,7 @@
 
 				.wrapper.style2 .icon.major:before {
 					color: #5052b5;
+					border-radius: 20px;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -3022,14 +3024,15 @@
 		.spotlights > section > .image {
 			background-position: center center;
 			background-size: cover;
-			border-radius: 0;
+			border-radius: 20px;
 			display: block;
 			position: relative;
 			width: 25em;
+
 		}
 
 			.spotlights > section > .image img {
-				border-radius: 0;
+				border-radius: 20px;
 				display: block;
 			}
 
@@ -3257,11 +3260,13 @@
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #FFF;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			border-top: solid 1px #f48024;
+			border-bottom: solid 1px #f48024;
+			background-color: #fff;
 		}
 
 		.wrapper.style2-alt {
@@ -3749,7 +3754,7 @@
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.7em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
 			line-height: 1.75;
@@ -3771,14 +3776,11 @@
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #FFFFFF;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background: #FFFFFF;
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3792,6 +3794,7 @@
 
 			#sidebar nav a.active {
 				color: #ffffff;
+				font-size: 0.8em;
 			}
 
 				#sidebar nav a.active:after {
