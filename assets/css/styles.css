@@ -6,9 +6,15 @@
 #task1-btn -> #task1 (+.long + color)
 .light for .content
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
     color: #2d2d2d;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 #sidebar {
