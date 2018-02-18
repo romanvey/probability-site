@@ -33,6 +33,8 @@ body{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     color: black;
     width: 100%;
     display: none;

@@ -45,42 +45,27 @@
         </div>
     </section>
 
-    <!-- 1 -->
-    <section id="one" class="wrapper style2 spotlights">
-        <section>
-            <div href="#" class="image"><img src="images/task2.jpg" alt="" data-position="center center"/></div><!-- CHANGE PHOTO-->
-            <div class="content light">
-                <div class="inner">
-                    <h2>Example 1</h2>
-                    <p>You have 8 balls. How many combinations you have for getting 2 of them?</p>
-                    <ul class="actions">
-                        <li><a class="button" id="task1-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
-                    </ul>
+        <!-- 1 -->
+        <section id="one" class="wrapper style2 spotlights">
+            <section>
+                <div href="#" class="image"><img src="images/task1.jpg" alt="" data-position="center center"/></div><!-- CHANGE PHOTO-->
+                <div class="content light">
+                    <div class="inner">
+                        <h2>Example 1</h2>
+                        <p>Student knows 25 questions from 60 questions. What is the probability to pass the exam? Exam considered to be passed if 2/3 answers are correct.</p>
+                        <ul class="actions">
+                            <li><a class="button" id="task1-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
+                        </ul>
+                    </div>
                 </div>
+    
+            </section>
+            <div class="long" id="task1"><!-- CHANGE ID AND ADD IN JS-->
+                Student knows 25 questions and doesn`t know 35 questions respectively. For pass the exam student need to know 2 or 3 questions 
+                from 3. Firstly, let`s find ways to pass exam with 2 right questions. 
             </div>
-
         </section>
-        <div class="long" id="task1"><!-- CHANGE ID AND ADD IN JS-->
-
-            When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-            $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-            $$ \begin{array}{rcll}
-            y & = & x^{2}+bx+c\\
-            & = & x^{2}+2\times\dfrac{b}{2}x+c\\
-            & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
-            {\left(\dfrac{b}{2}\right)^{2}+c}\\
-            & & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
-            & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
-            & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
-            y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
-            \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
-            y-y_{S} & = & (x-x_{S})^{2}\\
-            S(x_{S};y_{S}) & \,\textrm{or}\,
-            & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
-            \end{array} $$
-        </div>
-    </section>
-    <!-- 1 end-->
+        <!-- 1 end-->
 
 
 
@@ -100,8 +85,8 @@
 
         </section>
         <div class="long" id="task2"><!-- CHANGE ID AND ADD IN JS-->
-            Firstly, let`s consider what we need to find.</br> If you look attentively
-             you mention that answer would be all possible combinations</br> of getting
+            Firstly, let`s consider what we need to find. If you look attentively
+             you mention that answer would be all possible combinations of getting
               2 players from k players list. So, answer just:
               $$ \binom{k}{2} $$
         </div>
@@ -115,10 +100,10 @@
                 <div class="content light">
                     <div class="inner">
                         <h2>Example 3</h2>
-                        <p>Three passengers get on the elevator in 20 storied house. What is the probability that:<br/>
-                            a) all of them get off the elevator at different flats?<br/>
-                            b) two of them get off the elevator at same flat?<br/>
-                            c) all of them get off the elevator at same flat?</p>
+                        <p>Three passengers get on the elevator in 20 storied house. What is the probability that:</br>
+                            a) all of them get off the elevator at different flats?</br>
+                            b) all of them get off the elevator at same flat?</br>
+                            c) two of them get off the elevator at same flat?</p>
                         <ul class="actions">
                             <li><a class="button" id="task3-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
                         </ul>
@@ -127,7 +112,20 @@
     
             </section>
             <div class="long" id="task3"><!-- CHANGE ID AND ADD IN JS-->
-                Answer would be here
+                a) Let`s define answer $ P(A) $, $ A $ - event where all of them get off the elevator at different flats.
+                $ P(A) = \frac{favorable\ outcomes}{all\ outcomes}$</br>
+                $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. </br>
+                $favorable\ outcomes = 19\cdot18\cdot17$, everybody has one less possible flat, because it became occupied, but we need situation
+                were all people have different flats.
+                $$ P(A) = \frac{19\cdot18\cdot17}{19\cdot19\cdot19} = \frac{306}{361} \approx 0.84$$
+                b) Let`s define answer $ P(B) $, $ B $ - all of them get off the elevator at same flat.
+                $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. </br>
+                $favorable\ outcomes = 19$, first favorable outcome - when all passengers get off at first flat, second favorable outcome - when all passengers get off 
+                at second flat etc.
+                $$ P(A) = \frac{19}{19\cdot19\cdot19} = \frac{1}{361} \approx 0.0027$$
+                c) Let`s define answer $ P(C) $, $ C $ - event where two of them get off the elevator at same flat. It`s much harder problem if we would
+                solve it in combinatoric way like previous problems. But we can notice $ P(A) + P(B) + P(C) = 1$, so $ P(C) = 1 - \frac{306}{361} -\frac{1}{361} =
+                \frac{54}{361} \approx 0.15$
             </div>
         </section>
         <!-- 3 end-->
@@ -144,7 +142,7 @@
     <div class="inner" style="padding: 0.8em 10em;">
         <ul class="menu" style="margin: 0;">
             <li><h4 style="margin: 0;">&copy; All rights reserved.</h4></li>
-            <li><h4 style="margin: 0;">APPS.UCU Probability and Statistic.</h4></li>
+            <li><h4 style="margin: 0;">APPS.UCU Probability and Statistics.</h4></li>
         </ul>
     </div>
 </footer>
@@ -152,9 +150,6 @@
 <!-- Scripts -->
 <script type="text/x-mathjax-config">
 			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-
-
-
 </script>
 <script type="text/javascript"
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
