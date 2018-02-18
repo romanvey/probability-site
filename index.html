@@ -45,44 +45,51 @@
         </div>
     </section>
 
-        <!-- 1 -->
-        <section id="one" class="wrapper style2 spotlights">
-            <section>
-                <div href="#" class="image"><img src="images/task1.jpg" alt="" data-position="center center"/></div><!-- CHANGE PHOTO-->
-                <div class="content light">
-                    <div class="inner">
-                        <h2>Example 1</h2>
-                        <p>Student knows 25 questions from 60 questions. What is the probability to pass the exam? Exam considered to be passed if 2/3 answers are correct.</p>
-                        <ul class="actions">
-                            <li><a class="button" id="task1-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
-                        </ul>
-                    </div>
+    <!-- 1 -->
+    <section id="one" class="wrapper style2 spotlights">
+        <section>
+            <div href="#" class="image"><img src="images/task1.jpg" alt="" data-position="center center"/></div>
+            <!-- CHANGE PHOTO-->
+            <div class="content light">
+                <div class="inner">
+                    <h2>Example 1</h2>
+                    <p>Student knows 25 questions from 60 questions. What is the probability to pass the exam? Exam
+                        considered to be passed if 2/3 answers are correct.</p>
+                    <ul class="actions">
+                        <li><a class="button" id="task1-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
+                    </ul>
                 </div>
-    
-            </section>
-            <div class="long" id="task1"><!-- CHANGE ID AND ADD IN JS-->
-                Let`s define answer $ P(E) $, $ E $ - event that student pass exam.</br>
-                Student knows 25 questions and doesn`t know 35 questions respectively. For pass the exam student need to know 2 or 3 questions from 3. </br>
-                Firstly, let`s find all possible combinations to pass exam with 2 right questions. It is just $ C_{25}^{2} \cdot C_{35}^{1}$.</br>
-                Nextly, let`s find all possible combinations to pass exam with 3 right questions. It would be $ C_{25}^{3}$.</br>
-                Final answer would be all possible combinations to get 2 right questions and 3 right questions divided by
-                 all possible combinations to get 3 questions from 60 questions.</br>
-                 All possible combinations to get 3 questions from 60 equal $ C_{60}^{3}$.
-                $$ P(E) = \frac{C_{25}^{2} \cdot C_{35}^{1}+C_{25}^{3}}{C_{60}^{3}} = \frac{12800}{34200} = \frac{640}{1711} \approx 0.37$$ 
             </div>
-        </section>
-        <!-- 1 end-->
 
+        </section>
+        <div class="long" id="task1"><!-- CHANGE ID AND ADD IN JS-->
+            Let`s define answer $ P(E) $, $ E $ - event that student pass exam.</br>
+            Student knows 25 questions and doesn`t know 35 questions respectively. For pass the exam student need to
+            know 2 or 3 questions from 3. </br>
+            Firstly, let`s find all possible combinations to pass exam with 2 right questions. It is just $ C_{25}^{2}
+            \cdot C_{35}^{1}$.</br>
+            Nextly, let`s find all possible combinations to pass exam with 3 right questions. It would be $
+            C_{25}^{3}$.</br>
+            Final answer would be all possible combinations to get 2 right questions and 3 right questions divided by
+            all possible combinations to get 3 questions from 60 questions.</br>
+            All possible combinations to get 3 questions from 60 equal $ C_{60}^{3}$.
+            $$ P(E) = \frac{C_{25}^{2} \cdot C_{35}^{1}+C_{25}^{3}}{C_{60}^{3}} = \frac{12800}{34200} = \frac{640}{1711}
+            \approx 0.37$$
+        </div>
+    </section>
+    <!-- 1 end-->
 
 
     <!-- 2 -->
     <section id="two" class="wrapper style2 spotlights">
         <section>
-            <div href="#" class="image"><img src="images/task2.jpg" alt="" data-position="center center"/></div><!-- CHANGE PHOTO-->
+            <div href="#" class="image"><img src="images/task2.jpg" alt="" data-position="center center"/></div>
+            <!-- CHANGE PHOTO-->
             <div class="content light">
                 <div class="inner">
                     <h2>Example 2</h2>
-                    <p>In the chess game, k players are played. By rules, everyone has to play with everyone. How many games have been played?</p>
+                    <p>In the chess game, k players are played. By rules, everyone has to play with everyone. How many
+                        games have been played?</p>
                     <ul class="actions">
                         <li><a class="button" id="task2-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
                     </ul>
@@ -92,53 +99,115 @@
         </section>
         <div class="long" id="task2"><!-- CHANGE ID AND ADD IN JS-->
             Firstly, let`s consider what we need to find. If you look attentively
-             you mention that answer would be all possible combinations of getting
-              2 players from k players list. So, answer just:
-              $$ \binom{k}{2} $$
+            you mention that answer would be all possible combinations of getting
+            2 players from k players list. So, answer just:
+            $$ \binom{k}{2} $$
         </div>
     </section>
     <!-- 2 end-->
 
-        <!-- 3 -->
-        <section id="three" class="wrapper style2 spotlights">
-            <section>
-                <div href="#" class="image"><img src="images/task3.jpg" alt="" data-position="center center"/></div><!-- CHANGE PHOTO-->
-                <div class="content light">
-                    <div class="inner">
-                        <h2>Example 3</h2>
-                        <p>Three passengers get on the elevator in 20 storied house. What is the probability that:</br>
-                            a) all of them get off the elevator at different flats?</br>
-                            b) all of them get off the elevator at same flat?</br>
-                            c) two of them get off the elevator at same flat?</p>
-                        <ul class="actions">
-                            <li><a class="button" id="task3-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
-                        </ul>
-                    </div>
+    <!-- 3 -->
+    <section id="three" class="wrapper style2 spotlights">
+        <section>
+            <div href="#" class="image"><img src="images/task3.jpg" alt="" data-position="center center"/></div>
+            <!-- CHANGE PHOTO-->
+            <div class="content light">
+                <div class="inner">
+                    <h2>Example 3</h2>
+                    <p>Three passengers get on the elevator in 20 storied house. What is the probability that:</br>
+                        a) all of them get off the elevator at different flats?</br>
+                        b) all of them get off the elevator at same flat?</br>
+                        c) two of them get off the elevator at same flat?</p>
+                    <ul class="actions">
+                        <li><a class="button" id="task3-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
+                    </ul>
                 </div>
-
-            </section>
-            <div class="long" id="task3"><!-- CHANGE ID AND ADD IN JS-->
-                a) Let`s define answer $ P(A) $, $ A $ - event where all of them get off the elevator at different flats.
-                $ P(A) = \frac{favorable\ outcomes}{all\ outcomes}$</br>
-                $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. </br>
-                $favorable\ outcomes = 19\cdot18\cdot17$, everybody has one less possible flat, because it became occupied, but we need situation
-                were all people have different flats.
-                $$ P(A) = \frac{19\cdot18\cdot17}{19\cdot19\cdot19} = \frac{306}{361} \approx 0.84$$
-                b) Let`s define answer $ P(B) $, $ B $ - all of them get off the elevator at same flat.
-                $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. </br>
-                $favorable\ outcomes = 19$, first favorable outcome - when all passengers get off at first flat, second favorable outcome - when all passengers get off 
-                at second flat etc.
-                $$ P(A) = \frac{19}{19\cdot19\cdot19} = \frac{1}{361} \approx 0.0027$$
-                c) Let`s define answer $ P(C) $, $ C $ - event where two of them get off the elevator at same flat. It`s much harder problem if we would
-                solve it in combinatoric way like previous problems. But we can notice $ P(A) + P(B) + P(C) = 1$, so $ P(C) = 1 - \frac{306}{361} -\frac{1}{361} =
-                \frac{54}{361} \approx 0.15$
             </div>
+
         </section>
-        <!-- 3 end-->
+        <div class="long" id="task3"><!-- CHANGE ID AND ADD IN JS-->
+            a) Let`s define answer $ P(A) $, $ A $ - event where all of them get off the elevator at different flats.
+            $ P(A) = \frac{favorable\ outcomes}{all\ outcomes}$<br>
+            $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. <br>
+            $favorable\ outcomes = 19\cdot18\cdot17$, everybody has one less possible flat, because it became occupied,
+            but we need situation
+            were all people have different flats.
+            $$ P(A) = \frac{19\cdot18\cdot17}{19\cdot19\cdot19} = \frac{306}{361} \approx 0.84$$
+            b) Let`s define answer $ P(B) $, $ B $ - all of them get off the elevator at same flat.
+            $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. <br>
+            $favorable\ outcomes = 19$, first favorable outcome - when all passengers get off at first flat, second
+            favorable outcome - when all passengers get off
+            at second flat etc.
+            $$ P(A) = \frac{19}{19\cdot19\cdot19} = \frac{1}{361} \approx 0.0027$$
+            c) Let`s define answer $ P(C) $, $ C $ - event where two of them get off the elevator at same flat. It`s
+            much harder problem if we would
+            solve it in combinatoric way like previous problems. But we can notice $ P(A) + P(B) + P(C) = 1$, so $ P(C)
+            = 1 - \frac{306}{361} -\frac{1}{361} =
+            \frac{54}{361} \approx 0.15$
+        </div>
+    </section>
+    <!-- 3 end-->
 
 
+    <!-- 4 -->
+    <section id="four" class="wrapper style2 spotlights">
+        <section>
+            <div class="image"><img src="images/task4.jpg" alt="" data-position="center center"/></div>
+            <!-- CHANGE PHOTO-->
+            <div class="content light">
+                <div class="inner">
+                    <h2>Example 4</h2>
+                    <p>There are 500 students in a high school senior class. Of these 500 students, 300 regularly wear a
+                        necklace to school, 200 regularly wear a ring, and 125 regularly wear a necklace and a ring.
+                        <br><br>
+                        Let N be the event that a randomly selected senior regularly wears a necklace and R be the event
+                        that a randomly selected senior regularly wears a ring. <br><br>
+                        Using this information, answer each of the following questions.
+                    </p>
+                    <ul class="actions">
+                        <li><a class="button" id="task4-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
+                    </ul>
+                </div>
+            </div>
 
+        </section>
+        <div class="long" id="task4"><!-- CHANGE ID AND ADD IN JS-->
+            What is P(N), the probability that a senior wears a necklace?
+            What is P(R), the probability that a senior wears a ring?
+            What is P(N and R), the probability that a senior wears a necklace and a ring?
+            What is P(N or R) the probability that a senior wears a necklace or a ring?
+            <!--TODO-->
+        </div>
+    </section>
+    <!-- 4 end-->
 
+    <!-- 4 -->
+    <section id="five" class="wrapper style2 spotlights">
+        <section>
+            <div class="image"><img src="images/task5.jpg" alt="" data-position="center center"/></div>
+            <!-- CHANGE PHOTO-->
+            <div class="content light">
+                <div class="inner">
+                    <h2>Example 5</h2>
+                    <p>In how many ways can 10 undistinguishable apples be distributed among 5 children? <br>
+                        In how many ways can we distribute 52 cards between 4 players so that each gets 13 cards? <br>
+                    </p>
+                    <ul class="actions">
+                        <li><a class="button" id="task5-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <div class="long" id="task5"><!-- CHANGE ID AND ADD IN JS-->
+            What is P(N), the probability that a senior wears a necklace?
+            What is P(R), the probability that a senior wears a ring?
+            What is P(N and R), the probability that a senior wears a necklace and a ring?
+            What is P(N or R) the probability that a senior wears a necklace or a ring?
+            <!--TODO-->
+        </div>
+    </section>
+    <!-- 5 end-->
 
 
 </div>
@@ -156,6 +225,15 @@
 <!-- Scripts -->
 <script type="text/x-mathjax-config">
 			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+
+
+
+
+
+
+
+
 </script>
 <script type="text/javascript"
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
