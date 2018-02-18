@@ -59,3 +59,7 @@ body{
     color: #FFF !important;
     background:  linear-gradient(to left top, #F48024, #d66c22) !important;
 }
+
+.image{
+    background-size: contain !important;
+}

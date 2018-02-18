@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
     <title>It's easy</title>
@@ -171,12 +166,23 @@
             </div>
 
         </section>
-        <div class="long" id="task4"><!-- CHANGE ID AND ADD IN JS-->
-            What is P(N), the probability that a senior wears a necklace?
-            What is P(R), the probability that a senior wears a ring?
-            What is P(N and R), the probability that a senior wears a necklace and a ring?
-            What is P(N or R) the probability that a senior wears a necklace or a ring?
-            <!--TODO-->
+        <div class="" id="task4"><!-- CHANGE ID AND ADD IN JS--> <br>
+            <p> What is P(N), the probability that a senior wears a necklace?</p>
+            300 seniors wear a necklace, 500 total students. Thus => probability is <br>
+            $ P(N) = \frac{300}{500} = \frac{3}{5} = 0.6 $ <br><br>
+            <p>What is P(R), the probability that a senior wears a ring?</p>
+            The same as above; 200 seniors wear ring, 500 total, thus probability is <br>
+            $ P(R) = \frac{200}{500} = 0.4 $ <br><br>
+            <p>What is P(N and R), the probability that a senior wears a necklace and a ring?</p>
+            $ P(N and R) = \frac{125}{500} = 0.25$ <br><br>
+            <p> What is P(N or R) the probability that a senior wears a necklace or a ring?</p>
+            <i>*by formula:* </i> $ P(N or R) = P(N) + P(R) - P(N and R) = 0.6 + 0.4 - 0.25 = 0.75$ <br>
+            by bruteforce: Look at the picture above. 175 seniors wear necklace, but not ring, 75 seniors wear rings but
+            not necklace and 125 seniors wear both ring and necklace, total 175 + 75 + 125 = 375 students wearing
+            necklace or ring
+            <br>
+            $P(N or R) = 375 / 500 = 0.75$
+            <br>
         </div>
     </section>
     <!-- 4 end-->
@@ -190,7 +196,6 @@
                 <div class="inner">
                     <h2>Example 5</h2>
                     <p>In how many ways can 10 undistinguishable apples be distributed among 5 children? <br>
-                        In how many ways can we distribute 52 cards between 4 players so that each gets 13 cards? <br>
                     </p>
                     <ul class="actions">
                         <li><a class="button" id="task5-btn">Learn more</a></li><!-- CHANGE ID AND ADD IN JS-->
@@ -199,12 +204,12 @@
             </div>
 
         </section>
-        <div class="long" id="task5"><!-- CHANGE ID AND ADD IN JS-->
-            What is P(N), the probability that a senior wears a necklace?
-            What is P(R), the probability that a senior wears a ring?
-            What is P(N and R), the probability that a senior wears a necklace and a ring?
-            What is P(N or R) the probability that a senior wears a necklace or a ring?
-            <!--TODO-->
+        <div class="" id="task5"><!-- CHANGE ID AND ADD IN JS-->
+            We have <b style="color: black;">n</b>=10 objects (<b style="color: black;">apples</b>) and <b
+                    style="color: black;">k</b>=5 classes (<b style="color: black;">children</b>). <br>
+            To create k classes we need k-1 separators. And there are n+k+1 possible positions for the separators
+            to be placed in (as we can give 0 apples to some boy(s), we can put separators next to each other)
+            Answer: <i>n + k + 1 = 10 + 5 + 1 = 16 </i>ways
         </div>
     </section>
     <!-- 5 end-->
@@ -225,6 +230,15 @@
 <!-- Scripts -->
 <script type="text/x-mathjax-config">
 			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+
+
+
+
+
+
+
+
 
 
 

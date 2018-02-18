@@ -3022,7 +3022,7 @@
 		}
 
 		.spotlights > section > .image {
-			background-size: unset;
+			background-size: contain;
 			background: no-repeat center center;
 			border-radius: 20px;
 			display: block;
