@@ -61,8 +61,14 @@
     
             </section>
             <div class="long" id="task1"><!-- CHANGE ID AND ADD IN JS-->
-                Student knows 25 questions and doesn`t know 35 questions respectively. For pass the exam student need to know 2 or 3 questions 
-                from 3. Firstly, let`s find ways to pass exam with 2 right questions. 
+                Let`s define answer $ P(E) $, $ E $ - event that student pass exam.</br>
+                Student knows 25 questions and doesn`t know 35 questions respectively. For pass the exam student need to know 2 or 3 questions from 3. </br>
+                Firstly, let`s find all possible combinations to pass exam with 2 right questions. It is just $ C_{25}^{2} \cdot C_{35}^{1}$.</br>
+                Nextly, let`s find all possible combinations to pass exam with 3 right questions. It would be $ C_{25}^{3}$.</br>
+                Final answer would be all possible combinations to get 2 right questions and 3 right questions divided by
+                 all possible combinations to get 3 questions from 60 questions.</br>
+                 All possible combinations to get 3 questions from 60 equal $ C_{60}^{3}$.
+                $$ P(E) = \frac{C_{25}^{2} \cdot C_{35}^{1}+C_{25}^{3}}{C_{60}^{3}} = \frac{12800}{34200} = \frac{640}{1711} \approx 0.37$$ 
             </div>
         </section>
         <!-- 1 end-->
