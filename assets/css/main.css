@@ -3022,8 +3022,8 @@
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
-			background-size: cover;
+			background-size: unset;
+			background: no-repeat center center;
 			border-radius: 20px;
 			display: block;
 			position: relative;
@@ -3896,7 +3896,6 @@
 
 		#intro p {
 			font-size: 1.25em;
-			color: #e47523;
 		}
 
 			@media screen and (max-width: 980px) {
