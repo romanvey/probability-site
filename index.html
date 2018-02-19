@@ -67,9 +67,9 @@
             C_{25}^{3}$.</br>
             Final answer would be all possible combinations to get 2 right questions and 3 right questions divided by
             all possible combinations to get 3 questions from 60 questions.</br>
-            All possible combinations to get 3 questions from 60 equal $ C_{60}^{3}$.
-            $$ P(E) = \frac{C_{25}^{2} \cdot C_{35}^{1}+C_{25}^{3}}{C_{60}^{3}} = \frac{12800}{34200} = \frac{640}{1711}
-            \approx 0.37$$
+            All possible combinations to get 3 questions from 60 equal $ C_{60}^{3}$.</br>
+            $ P(E) = \frac{C_{25}^{2} \cdot C_{35}^{1}+C_{25}^{3}}{C_{60}^{3}} = $ $\frac{12800}{34200} = \frac{640}{1711}
+            \approx 0.37$
         </div>
     </section>
     <!-- 1 end-->
@@ -126,18 +126,18 @@
             $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. <br>
             $favorable\ outcomes = 19\cdot18\cdot17$, everybody has one less possible flat, because it became occupied,
             but we need situation
-            were all people have different flats.
-            $$ P(A) = \frac{19\cdot18\cdot17}{19\cdot19\cdot19} = \frac{306}{361} \approx 0.84$$
+            were all people have different flats.</br>
+            $ P(A) = \frac{19\cdot18\cdot17}{19\cdot19\cdot19} = $ $ \frac{306}{361} \approx 0.84$ </br>
             b) Let`s define answer $ P(B) $, $ B $ - all of them get off the elevator at same flat.
             $all\ outcomes = A_{3}^{19}$, because everybody has 19 possible flats to get off. <br>
             $favorable\ outcomes = 19$, first favorable outcome - when all passengers get off at first flat, second
             favorable outcome - when all passengers get off
-            at second flat etc.
-            $$ P(A) = \frac{19}{19\cdot19\cdot19} = \frac{1}{361} \approx 0.0027$$
+            at second flat etc.</br>
+            $ P(A) = \frac{19}{19\cdot19\cdot19} = $ $ \frac{1}{361} \approx 0.0027$ </br>
             c) Let`s define answer $ P(C) $, $ C $ - event where two of them get off the elevator at same flat. It`s
             much harder problem if we would
             solve it in combinatoric way like previous problems. But we can notice $ P(A) + P(B) + P(C) = 1$, so $ P(C)
-            = 1 - \frac{306}{361} -\frac{1}{361} =
+            = 1 - \frac{306}{361} -\frac{1}{361} = $ $
             \frac{54}{361} \approx 0.15$
         </div>
     </section>
@@ -176,12 +176,12 @@
             <p>What is P(N and R), the probability that a senior wears a necklace and a ring?</p>
             $ P(N and R) = \frac{125}{500} = 0.25$ <br><br>
             <p> What is P(N or R) the probability that a senior wears a necklace or a ring?</p>
-            <i>*by formula:* </i> $ P(N or R) = P(N) + P(R) - P(N and R) = 0.6 + 0.4 - 0.25 = 0.75$ <br>
+            <i>*by formula:* </i> $ P(N \cup R) = P(N) + P(R) $ $- P(N \cap R) = 0.6 + 0.4 - $ $ 0.25 = 0.75$ <br>
             by bruteforce: Look at the picture above. 175 seniors wear necklace, but not ring, 75 seniors wear rings but
             not necklace and 125 seniors wear both ring and necklace, total 175 + 75 + 125 = 375 students wearing
             necklace or ring
             <br>
-            $P(N or R) = 375 / 500 = 0.75$
+            $P(N \cup R) = 375 / 500 = 0.75$
             <br>
         </div>
     </section>
@@ -207,9 +207,10 @@
         <div class="long" id="task5"><!-- CHANGE ID AND ADD IN JS-->
             We have <b style="color: black;">n</b>=10 objects (<b style="color: black;">apples</b>) and <b
                     style="color: black;">k</b>=5 classes (<b style="color: black;">children</b>). <br>
-            To create k classes we need k-1 separators. And there are n+k+1 possible positions for the separators
-            to be placed in (as we can give 0 apples to some kid(s), we can put separators next to each other)
-            Answer: <i>n + k + 1 = 10 + 5 + 1  </i>= 16ways
+            To create k classes we need k - 1 separators. And there are n + k - 1 possible positions for the separators
+            to be placed in (as we can give 0 apples to some kid(s), we can put separators next to each other).
+            Now we need to calculate all possible combinations to put k - 1 separators in n + k - 1 places.
+            Separators are similar(order doesn`t matter), so answer would be $C_{n+k-1}^{k-1} = $ $ C_{14}^{4} = 1001$. 
         </div>
     </section>
     <!-- 5 end-->
